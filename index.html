@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <!-- We also can have a button 'search' and onClick event, but i undrestood that the task is like this one -->
+      <!-- Also when you search something you need to press enter in order to show results -->
+      <input onChange="search()" id="input_text" type="text" />
+      <button onClick="fetchData()">Fetch Data</button>
+      <button onclick="sortASC()">Sort asc</button>
+      <button onclick="sortDESC()">Sort desc</button>
+      <!-- <button onClick="search()">Search</button> -->
+    </div>
+
+    <div id="app"></div>
+  </body>
+</html>
